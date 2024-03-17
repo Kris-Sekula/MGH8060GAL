@@ -5,7 +5,7 @@ This project is very similar to my other IN8060-based project [->"MGH8060"<-](ht
 
 Here is an overview of the device:
 
-![MGH8060GAL_overview](Pictures/mgh8060GAL_v1.4_overview_S.png)
+![MGH8060GAL_overview](Pictures/mgh8060gal_v1.4_overview_S.png)
 
 ### Schematic
 [Schematic - Version 1.2](Hardware/mgh8060_v1.2.pdf)
