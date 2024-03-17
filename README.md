@@ -8,12 +8,11 @@ Here is an overview of the device:
 ![MGH8060GAL_overview](Pictures/mgh8060gal_v1.4_overview_S.png)
 
 ### Schematic
-[Schematic - Version 1.2](Hardware/mgh8060_v1.2.pdf)
+[Schematic - Version 1.2](Hardware/mgh8060gal_v1.4.pdf)
 
 ### Credits
-* The device is based on the work of [Ronald Dekker](https://www.dos4ever.com/SCMP/SCMP.html#circuit)
 
-* Early versions of my design were reviewed by Phil(aka [Retro Phil](https://www.mccrash-racing.co.uk/philg/picl/picl.htm)) who offered a lot of helpful suggestions, he also contributed all the firmware for MGH8060
+* Early versions of my design were reviewed by Phil(aka [Retro Phil](https://www.mccrash-racing.co.uk/philg/picl/picl.htm)) who offered a lot of helpful suggestions, he also contributed all the firmware for MGH8060 and MGH8060GAL
 
 ## Release Notes
 
@@ -28,6 +27,10 @@ If you found this helpful and you like the work I do, why not buy me a coffee, t
 [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/R6R52KGCD)
 
 ### Changes
+* Version 1.4
+  
+  * Corrected missing ENIN to ground connection.
+    
 * Version 1.3
   
   * Initial version
