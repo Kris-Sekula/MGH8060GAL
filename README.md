@@ -1,4 +1,4 @@
-# MGH8060
+# MGH8060GAL
 SC/MP INS8060-based microcomputer running National Industrial Basic Language (NIBL)
 
 This project is very similar to my other IN8060-based project [->"MGH8060"<-](https://github.com/Kris-Sekula/MGH8060) but uses a programmable logic device (GAL22V10) instead of discrete logic for address decoding.
