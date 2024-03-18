@@ -8,7 +8,7 @@ Here is an overview of the device:
 ![MGH8060GAL_overview](Pictures/mgh8060gal_v1.4_overview_S.png)
 
 ### Schematic
-[Schematic - Version 1.2](Hardware/mgh8060gal_v1.4.pdf)
+[Schematic - Version 1.4](Hardware/mgh8060gal_v1.4.pdf)
 
 ### Credits
 
