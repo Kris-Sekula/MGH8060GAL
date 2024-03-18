@@ -20,7 +20,7 @@ I used Winbond W27C512 (EEPROM pin compatible with standard EPROMs)
 
 Please consider getting the PCB from my sponsor PCBWay
 
-[![PCBWay](https://www.pcbway.com/project/img/images/frompcbway.png)](https://www.pcbway.com/project/shareproject/MGH8060_SC_MP_Microcomputer_731c2144.html)
+[![PCBWay](https://www.pcbway.com/project/img/images/frompcbway.png)](https://www.pcbway.com/project/shareproject/MGH8060GAL_SC_MP_Microcomputer_with_GAL22V10_23baed0e.html)
 
 If you found this helpful and you like the work I do, why not buy me a coffee, thanks! :)
 
