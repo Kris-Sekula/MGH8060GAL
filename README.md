@@ -7,6 +7,11 @@ Here is an overview of the device:
 
 ![MGH8060GAL_overview](Pictures/mgh8060gal_v1.4_overview_S.png)
 
+And my assembled prototype (v1.3):
+
+![MGH8060GAL_overview](Pictures/Assembled_1.3_S.png)
+
+
 ### Schematic
 [Schematic - Version 1.4](Hardware/mgh8060gal_v1.4.pdf)
 
