@@ -1,0 +1,89 @@
+EQN2JED - Boolean Equations to JEDEC file assembler (Version V101)
+Copyright (c) National Semiconductor Corporation 1990-1993
+
+Log file for MGH2210A.EQN
+Device: G22V10
+
+Pin   Label               Type
+---   -----               ----
+1     CLK                 clock pin
+2     D0                  pos,com input
+3     D1                  pos,com input
+4     D2                  pos,com input
+5     D3                  pos,com input
+6     D4                  unused
+7     D5                  unused
+8     D6                  pos,com input
+9     D7                  pos,com input
+10    A10                 unused
+11    A11                 pos,com input
+12    GND                 ground pin
+13    F0                  pos,com input
+14    TX                  pos,trst,com output
+15    /nIO                neg,trst,com output
+16    /nROM               neg,trst,com output
+17    /nRAM               neg,trst,com output
+18    HFG                 pos,trst,reg output
+19    DFG                 pos,trst,reg output
+20    A15                 pos,trst,reg feedback
+21    A14                 pos,trst,reg feedback
+22    A13                 pos,trst,reg feedback
+23    A12                 pos,trst,reg feedback
+24    VCC                 power pin
+
+EQN2JED - Boolean Equations to JEDEC file assembler (Version V101)
+Copyright (c) National Semiconductor Corporation 1990-1993
+
+Device Utilization:
+
+No of dedicated inputs used               :  8/12 (66.7%)
+No of feedbacks used as dedicated outputs :  6/10 (60.0%)
+No of feedbacks used                      :  4/10 (40.0%)
+
+		------------------------------------------
+		Pin   Label                 Terms Usage
+		------------------------------------------
+		23    A12.oe                1/1   (100.0%)
+		23    A12                   1/8   (12.5%)
+		22    A13.oe                1/1   (100.0%)
+		22    A13                   1/10  (10.0%)
+		21    A14.oe                1/1   (100.0%)
+		21    A14                   1/12  (8.3%)
+		20    A15.oe                1/1   (100.0%)
+		20    A15                   1/14  (7.1%)
+		19    DFG.oe                1/1   (100.0%)
+		19    DFG                   1/16  (6.2%)
+		18    HFG.oe                1/1   (100.0%)
+		18    HFG                   1/16  (6.2%)
+		17    nRAM.oe               1/1   (100.0%)
+		17    nRAM                  4/14  (28.6%)
+		16    nROM.oe               1/1   (100.0%)
+		16    nROM                  7/12  (58.3%)
+		15    nIO.oe                1/1   (100.0%)
+		15    nIO                   1/10  (10.0%)
+		14    TX.oe                 1/1   (100.0%)
+		14    TX                    1/8   (12.5%)
+		------------------------------------------
+		Total Terms                29/132 (22.0%)
+		------------------------------------------
+
+EQN2JED - Boolean Equations to JEDEC file assembler (Version V101)
+Copyright (c) National Semiconductor Corporation 1990-1993
+
+                            Chip diagram (DIP)
+
+                             ._____    _____.
+                             |     \__/     |
+                         CLK |  1        24 | VCC
+                          D0 |  2        23 | A12
+                          D1 |  3        22 | A13
+                          D2 |  4        21 | A14
+                          D3 |  5        20 | A15
+                          D4 |  6        19 | DFG
+                          D5 |  7        18 | HFG
+                          D6 |  8        17 | /nRAM
+                          D7 |  9        16 | /nROM
+                         A10 | 10        15 | /nIO
+                         A11 | 11        14 | TX
+                         GND | 12        13 | F0
+                             |______________|

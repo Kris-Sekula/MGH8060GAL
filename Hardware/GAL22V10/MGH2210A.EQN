@@ -1,0 +1,62 @@
+; MGH8060GAL
+
+CHIP MGH8060GAL GAL22v10
+
+; 1  2 3  4  5  6  7  8  9  10  11  12
+CLK D0 D1 D2 D3 D4 D5 D6 D7 A10 A11 GND
+
+F0  TX  /nIO /nROM /nRAM HFG DFG A15 A14 A13 A12 VCC
+;13 14  15   16    17    18  19  20  21  22  23  24
+
+
+EQUATIONS
+; create A12-A15 using registered outputs
+A12 := D0
+A13 := D1
+A14 := D2
+A15 := D3
+
+; flags
+DFG := D6
+HFG := D7
+
+; invert serial output
+TX = /F0
+
+; /ROM Enable signal
+nROM = /A15 * /A14 * /A13 * /A12 * /A11
++ /A15 * /A14 * /A13 * A12
++ /A15 * /A14 * A13 * A12
++ A15 * /A14 * /A13
++ A15 * /A14 * A13 * A12
++ A15 * A14 * /A13
++ A15 * A14 * A13
+
+; /RAM enable signal
+nRAM = /A15 * /A14 * /A13 * /A12 * A11
++ /A15 * /A14 * A13 * /A12
++ /A15 * A14 * /A13
++ /A15 * A14 * A13
+
+; /IO enable signal
+nIO = A15 * /A14 * A13 * /A12
+
+;PAGE A15 A14 A13 A12 A11 Type (Range) Equation
+;----------------------------------------------------------
+; 0 0 0 0 0 0 ROM (0000-07FF) /A15 * /A14 * /A13 * /A12 * /A11
+; 0 0 0 0 0 1 RAM (0800-0FFF) /A15 * /A14 * /A13 * /A12 * A11
+; 1 0 0 0 1 X ROM (1000-1FFF) /A15 * /A14 * /A13 * A12
+; 2 0 0 1 0 X RAM (2000-2FFF) /A15 * /A14 * A13 * /A12
+; 3 0 0 1 1 X ROM (3000-3FFF) /A15 * /A14 * A13 * A12
+; 4 0 1 0 0 X RAM (4000-4FFF) /A15 * A14 * /A13 * /A12
+; 5 0 1 0 1 X RAM (5000-5FFF) /A15 * A14 * /A13 * A12
+; 6 0 1 1 0 X RAM (6000-6FFF) /A15 * A14 * A13 * /A12
+; 7 0 1 1 1 X RAM (7000-7FFF) /A15 * A14 * A13 * A12
+; 8 1 0 0 0 X ROM (8000-8FFF) A15 * /A14 * /A13 * /A12
+; 9 1 0 0 1 X ROM (9000-9FFF) A15 * /A14 * /A13 * A12
+; A 1 0 1 0 X IO  (A000-AFFF) A15 * /A14 * A13 * /A12
+; B 1 0 1 1 X ROM (B000-BFFF) A15 * /A14 * A13 * A12
+; C 1 1 0 0 X ROM (C000-CFFF) A15 * A14 * /A13 * /A12
+; D 1 1 0 1 X ROM (D000-DFFF) A15 * A14 * /A13 * A12
+; E 1 1 1 0 X ROM (E000-EFFF) A15 * A14 * A13 * /A12
+; F 1 1 1 1 X ROM (F000-FFFF) A15 * A14 * A13 * A12
