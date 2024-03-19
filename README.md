@@ -18,6 +18,7 @@ And my assembled prototype (v1.3):
 ### Credits
 
 * Early versions of my design were reviewed by Phil(aka [Retro Phil](https://www.mccrash-racing.co.uk/philg/picl/picl.htm)) who offered a lot of helpful suggestions, he also contributed all the firmware for MGH8060 and MGH8060GAL
+*  Thanks to Ian G, who showed us how to implement the "latch" part of the design into the GAL22V10...
 
 ## Release Notes
 
